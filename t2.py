@@ -1,7 +1,7 @@
 import discord
-
+import os
 # Replace 'YOUR_TOKEN_HERE' with your bot's token
-TOKEN = 'MTE0OTQ5Njk1MTI0MzU1ODk1Mw.G6Bd3I.xoO4Db4dF_qQ4SpV-gLGjpHBDC0u8xliQjFGHQ'
+TOKEN = os.getenv('DISCORD_TOKEN')
 intents = discord.Intents.default()
 intents.typing = False  # Disable typing notifications (optional)
 
